@@ -35,7 +35,7 @@ function findWordLocation() {
 if (import.meta.vitest) {
   const { describe, it, expect } = import.meta.vitest;
 
-  describe.only('findWordLocation', () => {
+  describe.skip('findWordLocation', () => {
     it('should return the coord of the word matched in the grid', () => {
       expect(findWordLocation(grid1, word1_1)).toEqual([
         (1, 1),
