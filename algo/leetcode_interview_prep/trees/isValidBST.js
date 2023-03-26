@@ -22,17 +22,14 @@ function isValidBST(root) {
 }
 
 function isValidBSTHelper(node, minValue, maxValue) {
-  // base case an empty tree is always a valid BST
+  // base case: empty tree is a BST
   if (!node) return true;
 
-  // check if the current node violates the BST property
-  if (node.val <= minValue || node.val >= maxValue) {
-    return false;
-  }
-  console.log(maxValue);
+  // check if the left node and right node satisfy the BST criteria
+  if (node.val <= minValue || node.val >= maxValue) return false;
+
   return (
-    isValidBSTHelper(node.left, minValue, node.val) &&
-    isValidBSTHelper(node.right, node.val, maxValue)
+    isValidBST(node.left, minValue, node.val) && isValidBSTHelper(node.right, node.val, maxValue)
   );
 }
 

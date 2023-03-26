@@ -24,6 +24,7 @@ class TreeNode {
 
 function maxDepth(root) {
   if (!root) return 0;
+
   let leftDepth = maxDepth(root.left);
   let rightDepth = maxDepth(root.right);
 
