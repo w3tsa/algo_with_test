@@ -4,8 +4,7 @@ function billFor(month, activeSubscription, users) {
   }
 
   // Calculate daily rate for subscription
-  const dailyRate =
-    activeSubscription.monthlyPriceInDollars / daysInMonth(month);
+  const dailyRate = activeSubscription.monthlyPriceInDollars / daysInMonth(month);
 
   // Create map to track number of active users for each day
   const activeUsersByDay = new Map();
