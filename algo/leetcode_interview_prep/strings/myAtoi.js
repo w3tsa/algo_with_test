@@ -53,13 +53,13 @@ function myAtoi(s) {
   else return result;
 }
 
-console.log(myAtoi('4193')); // 4193
+// console.log(myAtoi('4193')); // 4193
 // console.log(myAtoi('4193 with words')); // 4193
 // console.log(myAtoi('with words 4193 ')); // 0
 // console.log(myAtoi('     -42')); // -42
 // console.log(myAtoi('-91283472332')); // -2147483648
-console.log(myAtoi('')); // 0
-console.log(myAtoi('  -0012a42')); // 0
+// console.log(myAtoi('')); // 0
+// console.log(myAtoi('  -0012a42')); // 0
 
 if (import.meta.vitest) {
   const { describe, it, expect } = import.meta.vitest;

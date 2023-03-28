@@ -130,7 +130,7 @@ let grid = [
 ];
 
 let word = 'access';
-console.log(search(grid, word));
+// console.log(search(grid, word));
 
 if (import.meta.vitest) {
   const { describe, it, expect } = import.meta.vitest;

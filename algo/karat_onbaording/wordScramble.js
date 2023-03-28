@@ -72,25 +72,25 @@ function isScrambled(str1, str2) {
 
 const words = ['baby', 'referee', 'cat', 'dada', 'dog', 'bird', 'ax', 'baz'];
 const note1 = 'ctay';
-console.log(find(words, note1)); // "cat"   (the letters do not have to be in order)
+// console.log(find(words, note1)); // "cat"   (the letters do not have to be in order)
 
 const note2 = 'bcanihjsrrrferet';
-console.log(find(words, note2)); // "cat"   (the letters do not have to be together)
+// console.log(find(words, note2)); // "cat"   (the letters do not have to be together)
 
 const note3 = 'tbaykkjlga';
-console.log(find(words, note3)); // "-"     (the letters cannot be reused)
+// console.log(find(words, note3)); // "-"     (the letters cannot be reused)
 
 const note4 = 'bbbblkkjbaby';
-console.log(find(words, note4)); // "baby"
+// console.log(find(words, note4)); // "baby"
 
 const note5 = 'dad';
-console.log(find(words, note5)); // "-"
+// console.log(find(words, note5)); // "-"
 
 const note6 = 'breadmaking';
-console.log(find(words, note6)); // "bird"
+// console.log(find(words, note6)); // "bird"
 
 const note7 = 'dadaa';
-console.log(find(words, note7)); // "dada"
+// console.log(find(words, note7)); // "dada"
 
 if (import.meta.vitest) {
   const { describe, it, expect } = import.meta.vitest;

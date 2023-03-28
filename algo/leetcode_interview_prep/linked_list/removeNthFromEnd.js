@@ -22,7 +22,7 @@ var removeNthFromEnd = function (head, n) {
   }
   // if the fast pointer is null, it means the nth node from the end is the head node
   if (!fast) {
-    console.log(head.next);
+    // console.log(head.next);
     return head.next;
   }
   // move both pointer until the fast pointer reaches the end of the list

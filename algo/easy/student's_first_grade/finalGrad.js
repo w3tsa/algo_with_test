@@ -17,7 +17,7 @@ should return final grades:
 function finalGrade(grade, projects) {
   switch (true) {
     case grade > 90 || projects > 10:
-      console.log(grade > 50 && projects >= 2);
+      // console.log(grade > 50 && projects >= 2);
       return 100;
     case grade > 75 && projects >= 5:
       return 90;
@@ -33,23 +33,23 @@ function finalGrade(grade, projects) {
 if (import.meta.vitest) {
   const { describe, expect, it } = import.meta.vitest;
 
-  describe.skip("#finalGrade", () => {
-    it("should return 100", () => {
+  describe.skip('#finalGrade', () => {
+    it('should return 100', () => {
       expect(finalGrade(100, 12)).toEqual(100);
     });
-    it("should return 100", () => {
+    it('should return 100', () => {
       expect(finalGrade(99, 0)).toEqual(100);
     });
-    it("should return 90", () => {
+    it('should return 90', () => {
       expect(finalGrade(85, 5)).toEqual(90);
     });
-    it("should return 75", () => {
+    it('should return 75', () => {
       expect(finalGrade(55, 3)).toEqual(75);
     });
-    it("should return 0", () => {
+    it('should return 0', () => {
       expect(finalGrade(55, 0)).toEqual(0);
     });
-    it("should return 0", () => {
+    it('should return 0', () => {
       expect(finalGrade(20, 2)).toEqual(0);
     });
   });

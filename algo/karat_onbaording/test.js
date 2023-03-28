@@ -76,4 +76,4 @@ const grid1 = [
 
 const words1_1 = ['bat', 'by'];
 
-console.log(find_word_locations(grid1, words1_1));
+// console.log(find_word_locations(grid1, words1_1));
