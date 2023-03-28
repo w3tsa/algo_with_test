@@ -37,7 +37,7 @@ tree1.right = new TreeNode(20);
 tree1.right.left = new TreeNode(15);
 tree1.right.right = new TreeNode(7);
 
-console.log(maxDepth(tree1));
+// console.log(maxDepth(tree1));
 // console.log(maxDepth([1, null, 2]));
 
 if (import.meta.vitest) {

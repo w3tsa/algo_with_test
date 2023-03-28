@@ -43,7 +43,7 @@ tree2.right = new TreeNode(4);
 tree2.right.left = new TreeNode(3);
 tree2.right.right = new TreeNode(6);
 
-console.log(isValidBST(tree1)); // true
+// console.log(isValidBST(tree1)); // true
 // console.log(isValidBST(tree2)); // false
 
 if (import.meta.vitest) {

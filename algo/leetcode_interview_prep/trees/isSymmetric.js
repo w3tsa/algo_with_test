@@ -36,7 +36,7 @@ tree1.right = new TreeNode(2);
 tree1.right.right = new TreeNode(3);
 tree1.right.left = new TreeNode(4);
 
-console.log(tree1);
+// console.log(tree1);
 
 if (import.meta.vitest) {
   const { describe, it, expect } = import.meta.vitest;
