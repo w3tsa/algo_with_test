@@ -73,17 +73,17 @@ let maxBinaryHeap = new MaxBinaryHeap();
 // maxBinaryHeap.insert(1);
 // maxBinaryHeap.insert(100);
 // maxBinaryHeap.extractMax();
-console.log(maxBinaryHeap.extractMax());
-console.log(maxBinaryHeap);
+// console.log(maxBinaryHeap.extractMax());
+// console.log(maxBinaryHeap);
 
 // let result = [55, 45, 12, 32];
 
-// if (import.meta.vitest) {
-//   const { describe, it, expect } = import.meta.vitest;
+if (import.meta.vitest) {
+  const { describe, it, expect } = import.meta.vitest;
 
-//   describe('maxBinaryHeap', () => {
-//     it('should return a new heap with the new value', () => {
-//       expect(maxBinaryHeap.insert(55)).toEqual(result);
-//     });
-//   });
-// }
+  describe.skip('maxBinaryHeap', () => {
+    it('should return a new heap with the new value', () => {
+      expect(maxBinaryHeap.insert(55)).toEqual(result);
+    });
+  });
+}
