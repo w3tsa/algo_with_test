@@ -86,14 +86,13 @@ class MaxBinaryHeaps {
 }
 
 const heap = new MaxBinaryHeaps();
-heap.insert(55);
-heap.insert(199);
-heap.insert(1);
-heap.insert(null);
+// heap.insert(55);
+// heap.insert(199);
+// heap.insert(1);
+// heap.insert(null);
 // [ 199, 55, 41, 39, 27, 12, 33, 18, 1 ]
 // [ 1, 55, 41, 39, 27, 12, 33, 18 ]
 // console.log(heap.values);
-// console.log(heap.extractMax());
 // console.log(heap.extractMax());
 // console.log(heap.extractMax());
 // console.log(heap.extractMax());

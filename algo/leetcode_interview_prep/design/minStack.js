@@ -33,3 +33,60 @@ minStack.top();    // return 0
 minStack.getMin(); // return -2
 
 */
+
+class MinStack {
+  constructor() {
+    this.stack = [];
+    this.minStack = []; // Additional stack to keep track of minimum value
+  }
+
+  getMin() {
+    return this.minStack[this.minStack.length - 1];
+  }
+
+  push(value) {
+    this.stack.push(value);
+
+    // updated the minimum stack
+    if (this.minStack.length === 0 || value <= this.getMin()) {
+      this.minStack.push(value);
+    }
+  }
+
+  pop() {
+    const poppedValue = this.stack.pop();
+
+    // updated the minimum stack if the popped value was the minimum value
+    if (poppedValue === this.getMin()) {
+      this.minStack.pop();
+    }
+    return poppedValue;
+  }
+
+  top() {
+    return this.stack[this.stack.length - 1];
+  }
+}
+
+const minStack = new MinStack();
+minStack.push(-2);
+minStack.push(0);
+minStack.push(-3);
+
+if (import.meta.vitest) {
+  const { describe, it, expect } = import.meta.vitest;
+  describe.skip('MinStack', () => {
+    it('should return -3', () => {
+      expect(minStack.getMin()).toEqual(-3);
+    });
+    it('should return -3', () => {
+      expect(minStack.pop()).toEqual(-3);
+    });
+    it('should return 0', () => {
+      expect(minStack.top()).toEqual(0);
+    });
+    it('should return -2', () => {
+      expect(minStack.getMin()).toEqual(-2);
+    });
+  });
+}
