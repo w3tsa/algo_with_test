@@ -1,4 +1,4 @@
-/* Traverse children easy on a tree */
+/* Traverse children easy on a tree DFS use stack also uses recursive */
 class Graph {
   constructor() {
     this.adjacencyList = [];
@@ -59,14 +59,14 @@ class Graph {
   dfsIterative(vertex) {
     const stack = [vertex];
     const result = [];
-    const visited = new Set();
+    const visited = new Set(vertex);
     let currentVertex;
     while (stack.length > 0) {
       currentVertex = stack.pop();
+      result.push(currentVertex);
       this.adjacencyList[currentVertex].forEach((neighbor) => {
         if (!visited.has(neighbor)) {
           visited.add(neighbor);
-          result.push(neighbor);
           stack.push(neighbor);
         }
       });
