@@ -127,4 +127,4 @@ const arrays = [
 ];
 
 const result = findSumOfheap(arrays);
-console.log(result);
+// console.log(result);
